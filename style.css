@@ -603,6 +603,45 @@ footer a { color: #CCCCCC; text-decoration: underline; }
 }
 .dep-texto strong { font-style: normal; color: var(--laranja-escuro); }
 
+/* ─── GALERIA DE RECEITAS ─── */
+.receita-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 8px;
+}
+.receita-card {
+  background: var(--branco);
+  border-radius: 10px;
+  padding: 14px 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(255,107,0,.08);
+  border: 1px solid #F0E8DF;
+}
+.receita-emoji {
+  font-size: 26px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.receita-card div { display: flex; flex-direction: column; gap: 3px; }
+.receita-card strong {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--marrom);
+  line-height: 1.3;
+}
+.receita-card span {
+  font-size: 12px;
+  color: var(--cinza);
+  line-height: 1.4;
+}
+@media (max-width: 400px) {
+  .receita-grid { grid-template-columns: 1fr; }
+}
+
 /* ─── LISTA DE INCLUI (bloco preço) ─── */
 .preco-inclui-titulo {
   font-family: 'Montserrat', sans-serif;
