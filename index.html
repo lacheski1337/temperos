@@ -25,6 +25,54 @@
   defer
 ></script>
 
+<style>
+    /* Desativar a seleção de texto e cópia */
+    body {
+        -webkit-user-select: none; /* Chrome/Safari */
+        -moz-user-select: none;    /* Firefox */
+        -ms-user-select: none;     /* IE10+ */
+        user-select: none;         /* Padrão */
+    }
+</style>
+
+<script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+
+<script>
+    // Desabilitar o clique direito do mouse
+    window.oncontextmenu = function () {
+        return false;
+    };
+
+    // Desativar o arrastar e soltar de imagens
+    window.ondragstart = function () {
+        return false;
+    };
+
+    // Impedir o uso do atalho Ctrl+U (Ver código-fonte)
+    document.addEventListener("keydown", function (event) {
+        if (event.ctrlKey && event.key === "u") {
+            event.preventDefault();
+            alert("A visualização do código-fonte está desativada!");
+        }
+    });
+
+    // Impedir o uso do atalho Ctrl+Shift+I (Abrir DevTools)
+    document.addEventListener("keydown", function (event) {
+        if (event.ctrlKey && event.shiftKey && event.key === "I") {
+            event.preventDefault();
+            alert("O uso do DevTools está bloqueado!");
+        }
+    });
+
+    // Impedir o uso do F12 para abrir DevTools
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "F12") {
+            event.preventDefault();
+            alert("O uso do DevTools está bloqueado!");
+        }
+    });
+</script>
+
 </head>
 <body>
 
