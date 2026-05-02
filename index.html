@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Temperos Caseiros — 150 Receitas</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="preload" as="image" href="public/hero.png" fetchpriority="high">
 
 <script>
   window.pixelId = "69f4028407e14b17635169d7";
@@ -44,43 +47,7 @@
     }
 </style>
 
-<script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
-
-<script>
-    // Desabilitar o clique direito do mouse
-    window.oncontextmenu = function () {
-        return false;
-    };
-
-    // Desativar o arrastar e soltar de imagens
-    window.ondragstart = function () {
-        return false;
-    };
-
-    // Impedir o uso do atalho Ctrl+U (Ver código-fonte)
-    document.addEventListener("keydown", function (event) {
-        if (event.ctrlKey && event.key === "u") {
-            event.preventDefault();
-            alert("A visualização do código-fonte está desativada!");
-        }
-    });
-
-    // Impedir o uso do atalho Ctrl+Shift+I (Abrir DevTools)
-    document.addEventListener("keydown", function (event) {
-        if (event.ctrlKey && event.shiftKey && event.key === "I") {
-            event.preventDefault();
-            alert("O uso do DevTools está bloqueado!");
-        }
-    });
-
-    // Impedir o uso do F12 para abrir DevTools
-    document.addEventListener("keydown", function (event) {
-        if (event.key === "F12") {
-            event.preventDefault();
-            alert("O uso do DevTools está bloqueado!");
-        }
-    });
-</script>
+<script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool" defer></script>
 
 </head>
 <body>
@@ -95,21 +62,10 @@
   <p>
     Medidas exatas pra cada preparo, técnicas de conservação pra durar semanas e sabor que impressiona quem sentar à mesa.
   </p>
-  <img src="public/hero.png" alt="Temperos Caseiros" class="hero-img">
+  <img src="public/hero.png" alt="Temperos Caseiros" class="hero-img" fetchpriority="high" decoding="async">
+
+   <a href="#preco" class="btn-cta">QUERO MEU TEMPERO CASEIRO PERFEITO</a>
 </section>
-
-
-<!-- PREÇO TOPO -->
-<section class="secao">
-  <div class="preco-box">
-    <div class="preco-de">De R$ 97,00</div>
-    <div class="preco-por">Por apenas</div>
-    <div class="preco-valor">R$19,90</div>
-    <div class="preco-urgencia">Oferta por tempo limitado…</div>
-  </div>
-  <a href="#preco" class="btn-cta">QUERO MEU TEMPERO CASEIRO PERFEITO</a>
-</section>
-
 
 <!-- ══════════════════════════════════════════════
      DOBRA 2 — FILTRO DE PÚBLICO
@@ -195,56 +151,56 @@
 
   <div class="receita-grid">
     <div class="receita-card">
-      <img src="public/frango.jpg" alt="Tempero para frango" class="receita-img">
+      <img src="public/frango.jpg" alt="Tempero para frango" class="receita-img" loading="lazy" decoding="async">
       <div class="receita-info">
         <strong>Tempero base para frango</strong>
         <span>pronto em 10 minutos, dura 3 semanas</span>
       </div>
     </div>
     <div class="receita-card">
-      <img src="public/carne.jpg" alt="Mistura para carne" class="receita-img">
+      <img src="public/carne.jpg" alt="Mistura para carne" class="receita-img" loading="lazy" decoding="async">
       <div class="receita-info">
         <strong>Mistura para carne de panela</strong>
         <span>faz no domingo, usa a semana toda</span>
       </div>
     </div>
     <div class="receita-card">
-      <img src="public/arroz.jpg" alt="Tempero para arroz" class="receita-img">
+      <img src="public/arroz.jpg" alt="Tempero para arroz" class="receita-img" loading="lazy" decoding="async">
       <div class="receita-info">
         <strong>Tempero completo para arroz</strong>
         <span>nunca mais arroz sem graça</span>
       </div>
     </div>
     <div class="receita-card">
-      <img src="public/salada.jpg" alt="Mistura para saladas" class="receita-img">
+      <img src="public/salada.jpg" alt="Mistura para saladas" class="receita-img" loading="lazy" decoding="async">
       <div class="receita-info">
         <strong>Mistura para saladas e legumes</strong>
         <span>toque final que impressiona</span>
       </div>
     </div>
     <div class="receita-card">
-      <img src="public/peixe.jpg" alt="Tempero para peixe" class="receita-img">
+      <img src="public/peixe.jpg" alt="Tempero para peixe" class="receita-img" loading="lazy" decoding="async">
       <div class="receita-info">
         <strong>Tempero para peixe sem cheiro</strong>
         <span>proporção exata que funciona</span>
       </div>
     </div>
     <div class="receita-card">
-      <img src="public/alho.jpg" alt="Alho e cebola em pasta" class="receita-img">
+      <img src="public/alho.jpg" alt="Alho e cebola em pasta" class="receita-img" loading="lazy" decoding="async">
       <div class="receita-info">
         <strong>Alho e cebola em pasta</strong>
         <span>o coringa da sua geladeira</span>
       </div>
     </div>
     <div class="receita-card">
-      <img src="public/sazon.jpg" alt="Mistura tipo Sazon" class="receita-img">
+      <img src="public/sazon.jpg" alt="Mistura tipo Sazon" class="receita-img" loading="lazy" decoding="async">
       <div class="receita-info">
         <strong>Mistura seco tipo Sazon</strong>
         <span>só que natural e sem química</span>
       </div>
     </div>
     <div class="receita-card">
-      <img src="public/verde.jpg" alt="Tempero verde" class="receita-img">
+      <img src="public/verde.jpg" alt="Tempero verde" class="receita-img" loading="lazy" decoding="async">
       <div class="receita-info">
         <strong>Tempero verde que dura semanas</strong>
         <span>abre e está pronto</span>
@@ -263,13 +219,13 @@
   <div class="carrossel">
     <div class="carrossel-track" id="carrosselTrack">
       <div class="carrossel-slide">
-        <img src="public/1.jpg" alt="Depoimento 1">
+        <img src="public/1.jpg" alt="Depoimento 1" loading="lazy" decoding="async">
       </div>
       <div class="carrossel-slide">
-        <img src="public/2.jpg" alt="Depoimento 2">
+        <img src="public/2.jpg" alt="Depoimento 2" loading="lazy" decoding="async">
       </div>
       <div class="carrossel-slide">
-        <img src="public/3.jpg" alt="Depoimento 3">
+        <img src="public/3.jpg" alt="Depoimento 3" loading="lazy" decoding="async">
       </div>
     </div>
 
@@ -426,6 +382,13 @@
   <a href="#">Política de Privacidade</a> &nbsp;|&nbsp; <a href="#">Termos de Uso</a>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
+<script>
+    window.oncontextmenu=function(){return false;};
+    window.ondragstart=function(){return false;};
+    document.addEventListener("keydown",function(e){
+        if((e.ctrlKey&&e.key==="u")||(e.ctrlKey&&e.shiftKey&&e.key==="I")||e.key==="F12"){e.preventDefault();}
+    });
+</script>
 </body>
 </html>
