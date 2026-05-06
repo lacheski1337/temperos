@@ -4,49 +4,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Temperos Caseiros — 150 Receitas</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="preload" as="image" href="public/hero.png" fetchpriority="high">
 
-<script>
-  window.pixelId = "69f4028407e14b17635169d7";
-  var a = document.createElement("script");
-  a.setAttribute("async", "");
-  a.setAttribute("defer", "");
-  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-  document.head.appendChild(a);
-</script>
-
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "wj1ezzm1to");
-</script>
-
-<script
-  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-  data-utmify-prevent-xcod-sck
-  data-utmify-prevent-subids
-  data-utmify-ignore-iframe
-  data-utmify-is-cartpanda
-  async
-  defer
-></script>
-
+<!-- CSS crítico inline: garante que o hero renderiza sem bloquear nenhum recurso externo -->
 <style>
-    /* Desativar a seleção de texto e cópia */
-    body {
-        -webkit-user-select: none; /* Chrome/Safari */
-        -moz-user-select: none;    /* Firefox */
-        -ms-user-select: none;     /* IE10+ */
-        user-select: none;         /* Padrão */
-    }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--laranja:#FF6B00;--creme:#FFF5EB;--marrom:#3D2B1F;--branco:#FFFFFF;--text:#1C1C1C;--grad-laranja:linear-gradient(135deg,#FF6B00 0%,#FFB300 100%);--grad-texto:linear-gradient(135deg,#FF6B00 0%,#FFB300 100%)}
+body{font-family:system-ui,sans-serif;background:var(--creme);color:var(--text);max-width:680px;margin:0 auto;font-size:16px;line-height:1.6;-webkit-user-select:none;user-select:none}
+.hero{background:var(--grad-laranja);padding:40px 28px 32px;text-align:center}
+.hero h1{font-weight:900;font-size:clamp(22px,5vw,30px);color:#fff;line-height:1.25;margin-bottom:18px}
+.hero p{font-size:16px;color:rgba(255,255,255,.92);line-height:1.65;max-width:560px;margin:0 auto 24px}
+.hero-img{width:100%;max-width:560px;border-radius:12px;margin:24px auto 0;display:block}
+.btn-cta{display:block;background:var(--grad-laranja);color:#fff;font-weight:800;font-size:15px;text-align:center;padding:18px 24px;border-radius:6px;text-decoration:none;letter-spacing:.5px;cursor:pointer;border:none;width:100%;text-transform:uppercase;box-shadow:0 4px 18px rgba(255,107,0,.35);margin-top:24px}
+.grad{background:var(--grad-texto);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 </style>
 
+<!-- Preconnects para Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Preload do LCP (imagem hero) -->
+<link rel="preload" as="image" href="public/hero.png" fetchpriority="high">
+
+<!-- CSS completo: carregado de forma assíncrona, não bloqueia o render -->
+<link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="style.css"></noscript>
+
+<!-- Google Fonts: carregado de forma assíncrona -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Lato:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Lato:wght@400;700&display=swap"></noscript>
+
+<!-- Tracking scripts (todos async/defer, não bloqueiam) -->
+<script>
+  window.pixelId="69f4028407e14b17635169d7";
+  var a=document.createElement("script");a.setAttribute("async","");a.setAttribute("defer","");a.setAttribute("src","https://cdn.utmify.com.br/scripts/pixel/pixel.js");document.head.appendChild(a);
+</script>
+<script>
+  (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","wj1ezzm1to");
+</script>
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids data-utmify-ignore-iframe data-utmify-is-cartpanda async defer></script>
 <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool" defer></script>
 
 </head>
